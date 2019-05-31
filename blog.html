@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <title>Oppai Corp.</title>
+</head>
+
+<body>
+    <div class="allsite">
+        <nav>
+            <a href="index.html"><img src="IMG/logo final.svg" alt="logo Oppai Corp."></a>
+            <img id="burger" src="IMG/menu-button-of-three-horizontal-lines.svg" alt="image menu" onclick="menu();">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="equipe.html">L'équipe</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="menuToggle cache">
+                <ul id="menu">
+                    <img onclick="menu();" src="IMG/close.svg" alt="bouton ferme menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="equipe.html">L'équipe</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pagecontent">
+            <div class="contenu">
+                <h1>Oppi Corp. qu'est-ce que c'est ?</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis autem velit quibusdam repudiandae magni, nesciunt voluptatum totam est, eos culpa nam sunt, temporibus adipisci consectetur sapiente voluptatibus blanditiis repellat debitis. Harum laborum
+                    rem doloremque, obcaecati repellat quae eum voluptatibus fugit commodi quas quos quia dolor, sit ea architecto tempora, ab error quo repudiandae corporis! Voluptate, illum? Unde, saepe! Blanditiis, eius! Ratione harum quod voluptates
+                    fugit dolor iste expedita. Atque ipsum laborum cum illo omnis harum quo repudiandae ad qui eos, laudantium dignissimos velit quam. Expedita, repellat fugit! Nesciunt, reiciendis voluptate.
+                </p>
+            </div>
+            <div class="contenu">
+                <h1>Un exemple de notre travil</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis autem velit quibusdam repudiandae magni, nesciunt voluptatum totam est, eos culpa nam sunt, temporibus adipisci consectetur sapiente voluptatibus blanditiis repellat debitis. Harum laborum
+                    rem doloremque, obcaecati repellat quae eum voluptatibus fugit commodi quas quos quia dolor, sit ea architecto tempora, ab error quo repudiandae corporis! Voluptate, illum? Unde, saepe! Blanditiis, eius! Ratione harum quod voluptates
+                    fugit dolor iste expedita. Atque ipsum laborum cum illo omnis harum quo repudiandae ad qui eos, laudantium dignissimos velit quam. Expedita, repellat fugit! Nesciunt, reiciendis voluptate.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>contact :
+            <a href="mailto:thomas.hoarau@uha.fr">thomas.hoarau@uha.fr</a>
+        </p>
+        <p>Oppai Corp. - Tous droits réservés.</p>
+    </footer>
+</body>
+<script>
+    function menu() {
+        document.querySelector(".menuToggle").classList.toggle("cache");
+    }
+</script>
+
+</html>

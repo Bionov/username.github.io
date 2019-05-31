@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" type="image/svg" href="IMG/Logo final.svg">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <title>Oppai Corp.</title>
+</head>
+
+<body>
+    <div class="allsite">
+        <nav>
+            <a href="index.html"><img src="IMG/logo final.svg" alt="logo Oppai Corp."></a>
+            <img id="burger" src="IMG/menu-button-of-three-horizontal-lines.svg" alt="image menu" onclick="menu();">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="equipe.html">L'équipe</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="menuToggle cache">
+                <ul id="menu">
+                    <img onclick="menu();" src="IMG/close.svg" alt="bouton ferme menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="equipe.html">L'équipe</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pagecontent">
+            <div class="contenu vidya">
+                <h1>Video Présentation</h1>
+                <video controls="controls" width="768" height="432">
+                    <source src="IMG/Présentation Oppai Corp.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="contenu equipe">
+                <h1>Notre équipe</h1>
+                <div class="equipage gat" onclick="montre(1);"><img src="IMG/ADEDIGADO.jpg" alt=""></div>
+                <div class="equipage bas" onclick="montre(2);"><img src="IMG/Ah !.jpg" alt=""></div>
+                <div class="equipage tim" onclick="montre(3);"><img src="IMG/received_440130800143070.jpeg" alt=""></div>
+                <div class="equipage toto" onclick="montre(4);"><img src="IMG/IMG_20190411_181320.jpg" alt=""></div>
+            </div>
+            <div class="contpers">
+                <p class="pers"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>contact :
+            <a href="mailto:thomas.hoarau@uha.fr">thomas.hoarau@uha.fr</a>
+        </p>
+        <p>Oppai Corp. - Tous droits réservés.</p>
+    </footer>
+</body>
+<script>
+    function montre(x) {
+        if (x == 1) {
+            document.querySelector(".contpers").style.display = "block";
+            document.querySelector(".pers").innerHTML = "GATIEN.";
+            document.querySelector(".gat").style.transform = "translateY(-5px)";
+            document.querySelector(".bas").style.transform = "";
+            document.querySelector(".tim").style.transform = "";
+            document.querySelector(".toto").style.transform = "";
+        } else if (x == 2) {
+            document.querySelector(".contpers").style.display = "block";
+            document.querySelector(".pers").innerHTML = "BASTIEN.";
+            document.querySelector(".gat").style.transform = "";
+            document.querySelector(".bas").style.transform = "translateY(-5px)";
+            document.querySelector(".tim").style.transform = "";
+            document.querySelector(".toto").style.transform = "";
+        } else if (x == 3) {
+            document.querySelector(".contpers").style.display = "block";
+            document.querySelector(".pers").innerHTML = "TIMOTE.";
+            document.querySelector(".gat").style.transform = "";
+            document.querySelector(".bas").style.transform = "";
+            document.querySelector(".tim").style.transform = "translateY(-5px)";
+            document.querySelector(".toto").style.transform = "";
+        } else if (x == 4) {
+            document.querySelector(".contpers").style.display = "block";
+            document.querySelector(".pers").innerHTML = "THOMAS.";
+            document.querySelector(".gat").style.transform = "";
+            document.querySelector(".bas").style.transform = "";
+            document.querySelector(".tim").style.transform = "";
+            document.querySelector(".toto").style.transform = "translateY(-5px)";
+        }
+    }
+
+    function menu() {
+        document.querySelector(".menuToggle").classList.toggle("cache");
+    }
+</script>
+
+</html>
